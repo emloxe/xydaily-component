@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>广告1</title>
+  </head>
+  <body>
+    <div id="swiper-container-adv-1" class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./ninja153907290259802.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./ninja153907290259802.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./ninja153907290259802.png" />
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div id="swiper-pagination-adv-1" class="swiper-pagination"></div>
+    </div>
+
+    <script>
+      const swiper = new Swiper('#swiper-container' + this.index, {
+        pagination: {
+          el: '#swiper-pagination' + this.index,
+        },
+      });
+    </script>
+  </body>
+</html>

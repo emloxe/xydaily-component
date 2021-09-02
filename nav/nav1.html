@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>导航1</title>
+    <link rel="stylesheet" href="../common.css">
+    <style>
+      .nav-wrap {
+        position: relative;
+        width: 1240px;
+      }
+      .nav-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .nav-flex.nav-top {
+        padding: 0 15px;
+        background-color: #1479d7;
+        border-radius: 4px;
+      }
+      .nav-flex.nav-top .list {
+        padding: 3px 8px;
+        cursor: pointer;
+      }
+      .nav-flex.nav-top .list:hover {
+        background: #b8d8f3;
+        color: #1479d7;
+      }
+      .nav-flex.nav-top a {
+        color: #fff;
+      }
+      .nav-flex.nav-content {
+        z-index: 100;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        display: none;
+        width: 1208px;
+        padding: 10px 15px;
+        border: 1px solid #e7e7e7;
+        box-shadow: 0 0 8px rgba(50, 50, 50, 0.1);
+        background-color: #fff;
+      }
+      .nav-flex.nav-content li {
+        height: 30px;
+        line-height: 30px;
+      }
+      .nav-flex.nav-content a {
+        color: #636262;
+        font-weight: 400;
+      }
+      .nav-flex.nav-content a:hover {
+        color: #1479d7;
+      }
+      .nav-flex li {
+        width: 71px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .nav-flex li a {
+        font-size: 17px;
+        color: #fff;
+        font-weight: bold;
+      }
+      .nav-flex .more svg {
+        transition: transform 0.3s;
+      }
+      .nav-flex .more:hover svg {
+        transform: rotate(-180deg);
+      }
+      .nav-flex .more:hover .nav-content {
+        display: flex;
+      }
+      .nav-flex svg path {
+        stroke: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-wrap">
+      <ul class="nav-flex nav-top">
+        <li>
+          <a href="##" class="list">新闻</a>
+        </li>
+        <li>
+          <a href="##" class="list">视频</a>
+        </li>
+        <li>
+          <a href="##" class="list">图片</a>
+        </li>
+        <li>
+          <a href="##" class="list">军事</a>
+        </li>
+        <li>
+          <a href="##" class="list">体育</a>
+        </li>
+        <li>
+          <a href="##" class="list">NBA</a>
+        </li>
+        <li>
+          <a href="##" class="list">娱乐</a>
+        </li>
+        <li>
+          <a href="##" class="list">财经</a>
+        </li>
+        <li>
+          <a href="##" class="list">科技</a>
+        </li>
+        <li>
+          <a href="##" class="list">时尚</a>
+        </li>
+        <li>
+          <a href="##" class="list">汽车</a>
+        </li>
+        <li>
+          <a href="##" class="list">房产</a>
+        </li>
+        <li>
+          <a href="##" class="list">教育</a>
+        </li>
+        <li>
+          <a href="##" class="list">文化</a>
+        </li>
+        <li>
+          <a href="##" class="list">星座</a>
+        </li>
+        <li>
+          <a href="##" class="list">游戏</a>
+        </li>
+        <li class="more">
+          <a href="##">
+            更多
+            <svg
+              t="1626169662897"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              p-id="3028"
+              width="15"
+              height="15"
+              class="icon"
+            >
+              <path
+                d="M512 714.666667c-8.533333 0-17.066667-2.133333-23.466667-8.533334l-341.333333-341.333333c-12.8-12.8-12.8-32 0-44.8 12.8-12.8 32-12.8 44.8 0l320 317.866667 317.866667-320c12.8-12.8 32-12.8 44.8 0 12.8 12.8 12.8 32 0 44.8L533.333333 704c-4.266667 8.533333-12.8 10.666667-21.333333 10.666667z"
+                p-id="3029"
+                fill="#ffffff"
+              ></path></svg
+          ></a>
+          <ul class="nav-flex nav-content">
+            <li><a href="##">法制</a></li>
+            <li><a href="##">热剧</a></li>
+            <li>
+              <a href="##">抗肺炎</a>
+            </li>
+            <li><a href="##">历史</a></li>
+            <li><a href="##">英超</a></li>
+            <li><a href="##">CBA</a></li>
+            <li><a href="##">明星</a></li>
+            <li><a href="##">理财</a></li>
+            <li><a href="##">科普</a></li>
+            <li><a href="##">健康</a></li>
+            <li><a href="##">车型</a></li>
+            <li><a href="##">家居</a></li>
+            <li><a href="##">育儿</a></li>
+            <li><a href="##">情感</a></li>
+            <li><a href="##">动漫</a></li>
+            <li><a href="##">公益</a></li>
+            <li><a href="##">天气</a></li>
+            <li><a href="##">政务</a></li>
+            <li><a href="##">综艺</a></li>
+            <li><a href="##">影展</a></li>
+            <li><a href="##">国际</a></li>
+            <li><a href="##">中超</a></li>
+            <li><a href="##">社区</a></li>
+            <li><a href="##">电影</a></li>
+            <li><a href="##">证券</a></li>
+            <li><a href="##">数码</a></li>
+            <li><a href="##">美容</a></li>
+            <li><a href="##">旅游</a></li>
+            <li><a href="##">生活</a></li>
+            <li><a href="##">儿童</a></li>
+            <li><a href="##">文学</a></li>
+            <li><a href="##">享看</a></li>
+            <li>
+              <a href="##">新国风</a>
+            </li>
+            <li><a href="##">全部</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

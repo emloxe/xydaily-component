@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>广告1</title>
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <style>
+      .swiper-container {
+        width: 860px;
+        height: 560px;
+        font-size: 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .swiper-container .button-wrap {
+        z-index: 100;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+      }
+      .swiper-container .button-wrap .swiper-button-prev:after,
+      .swiper-container .button-wrap .swiper-button-next:after {
+        color: #fff;
+        font-size: 26px;
+      }
+      .swiper-slide {
+        position: relative;
+      }
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide p {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+        line-height: 80px;
+        font-size: 21px;
+        text-align: center;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="##">
+            <img src="./pic1.jpg" />
+            <p>把我们的血肉，筑成我们新的长城——抗战精神述评</p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic1.jpg" />
+          <p>把我们的血肉，筑成我们新的长城——抗战精神述评</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./pic1.jpg" />
+          <p>把我们的血肉，筑成我们新的长城——抗战精神述评</p>
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="button-wrap">
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        speed: 1000,
+        // pagination: '.swiper-pagination',
+        paginationType: 'fraction',
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false, //设置为false时手动滑动后轮播不会失效
+        },
+      });
+    </script>
+  </body>
+</html>

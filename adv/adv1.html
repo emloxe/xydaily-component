@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>广告1</title>
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <style>
+      #swiper-container-adv-1 {
+        position: relative;
+        width: 390px;
+        height: 66px;
+      }
+      #swiper-container-adv-1 img {
+        width: 100%;
+        height: 100%;
+      }
+      #swiper-container-adv-1 .gg-txt{
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        font-size: 12px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .3);
+      }
+
+      #swiper-container-adv-1.swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: 3px;
+      }
+    </style>
   </head>
   <body>
     <div id="swiper-container-adv-1" class="swiper-container">
+      <span class="gg-txt">广告</span>
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
@@ -25,9 +56,9 @@
     </div>
 
     <script>
-      const swiper = new Swiper('#swiper-container' + this.index, {
+      var swiper = new Swiper('#swiper-container-adv-1', {
         pagination: {
-          el: '#swiper-pagination' + this.index,
+          el: '#swiper-pagination-adv-1',
         },
       });
     </script>

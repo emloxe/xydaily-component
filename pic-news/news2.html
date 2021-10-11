@@ -23,6 +23,42 @@
         right: 0;
         height: 80px;
       }
+
+
+
+
+
+      .swiper-container .button-wrap .swiper-button-prev,
+      .swiper-container .button-wrap .swiper-button-next {
+        top: -150px;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+
+      .swiper-container .button-wrap .swiper-button-prev {
+        left: 0;
+        border-radius: 0 6px 6px 0;
+      }
+
+      .swiper-container .button-wrap .swiper-button-next {
+        right: 0;
+        border-radius: 6px 0 0 6px;
+      }
+
+
+      .swiper-container:hover .button-wrap .swiper-button-prev,
+      .swiper-container:hover .button-wrap .swiper-button-next {
+        opacity: 1;
+      }
+
+
+
+      .swiper-container .button-wrap .swiper-button-prev:after,
+      .swiper-container .button-wrap .swiper-button-next:after {
+        color: #fff;
+        font-size: 26px;
+      }
       .swiper-slide {
         position: relative;
       }
@@ -94,6 +130,8 @@
       <div class="button-wrap">
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
 
@@ -101,11 +139,15 @@
       var swiper = new Swiper('.swiper-container', {
         speed: 1000,
         paginationType: 'fraction',
-        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
         pagination: {
           el: '.swiper-pagination',
+          clickable: true,
         },
-        loop:true,
+        loop: true,
         autoplay: {
           delay: 3000,
           stopOnLastSlide: false,

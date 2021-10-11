@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
     <script src="./swiper/swiper-bundle.min.js"></script>
     <style>
-      .swiper-container {
+      .swiper-container.news2 {
         width: 650px;
         height: 420px;
         font-size: 0;
         position: relative;
         overflow: hidden;
       }
-      .swiper-container .button-wrap {
+      .swiper-container.news2 .button-wrap {
         z-index: 100;
         position: absolute;
         bottom: 0;
@@ -23,50 +23,38 @@
         right: 0;
         height: 80px;
       }
-
-
-
-
-
-      .swiper-container .button-wrap .swiper-button-prev,
-      .swiper-container .button-wrap .swiper-button-next {
+      .swiper-container.news2 .button-wrap .swiper-button-prev,
+      .swiper-container.news2 .button-wrap .swiper-button-next {
         top: -150px;
         background-color: rgba(0, 0, 0, 0.3);
         opacity: 0;
         transition: opacity 0.5s;
       }
-
-      .swiper-container .button-wrap .swiper-button-prev {
+      .swiper-container.news2 .button-wrap .swiper-button-prev {
         left: 0;
         border-radius: 0 6px 6px 0;
       }
-
-      .swiper-container .button-wrap .swiper-button-next {
+      .swiper-container.news2 .button-wrap .swiper-button-next {
         right: 0;
         border-radius: 6px 0 0 6px;
       }
-
-
-      .swiper-container:hover .button-wrap .swiper-button-prev,
-      .swiper-container:hover .button-wrap .swiper-button-next {
+      .swiper-container.news2:hover .button-wrap .swiper-button-prev,
+      .swiper-container.news2:hover .button-wrap .swiper-button-next {
         opacity: 1;
       }
-
-
-
-      .swiper-container .button-wrap .swiper-button-prev:after,
-      .swiper-container .button-wrap .swiper-button-next:after {
+      .swiper-container.news2 .button-wrap .swiper-button-prev:after,
+      .swiper-container.news2 .button-wrap .swiper-button-next:after {
         color: #fff;
         font-size: 26px;
       }
-      .swiper-slide {
+      .swiper-container.news2 .swiper-slide {
         position: relative;
       }
-      .swiper-slide img {
+      .swiper-container.news2 .swiper-slide img {
         width: 100%;
         height: 100%;
       }
-      .swiper-slide p {
+      .swiper-container.news2 .swiper-slide p {
         position: absolute;
         z-index: 1;
         left: 0;
@@ -79,7 +67,7 @@
         line-height: 60px;
         font-size: 15px;
         text-align: left;
-        color: rgb(253, 253, 253);
+        color: #fdfdfd;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -91,22 +79,23 @@
           rgba(0, 0, 0, 0.3)
         );
       }
-
-      .swiper-pagination {
+      .swiper-container.news2 .swiper-pagination {
         top: 50px;
         right: 20px;
       }
-      .swiper-pagination .swiper-pagination-bullet {
+      .swiper-container.news2 .swiper-pagination .swiper-pagination-bullet {
         background-color: #a5a5a5;
         margin: 0 4px;
       }
-      .swiper-pagination .swiper-pagination-bullet-active {
+      .swiper-container.news2
+        .swiper-pagination
+        .swiper-pagination-bullet-active {
         background-color: #fff;
       }
     </style>
   </head>
   <body>
-    <div class="swiper-container">
+    <div class="swiper-container news2">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->

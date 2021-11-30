@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../common.css" />
+    <style>
+      /* 通知公告样式 */
+      /* .notice { width:250px } */
+      .notice .tit {
+        display: block;
+        height: 36px;
+        background: url(tit-tzgg.png) no-repeat left;
+        margin-top: -10px;
+        overflow: hidden;
+      }
+      .notice .tit span {
+        color: #910000;
+        font-size: 12px;
+        line-height: 35px;
+      }
+      .notice .bd {
+        height: 300px;
+        padding: 8px 0;
+      }
+      .notice .bd .tempWrap {
+        height: 300px !important;
+      } /* 用 !important覆盖SuperSlide自动生成的宽度，这样就可以手动控制可视宽度。 */
+      .notice .bd ul {
+        padding: 0;
+        overflow: hidden;
+        zoom: 1;
+      }
+      .notice .bd ul li {
+        margin: 6px 0;
+        line-height: 24px;
+        text-align: left;
+        _display: inline;
+        height: auto !important;
+        font-size: 15px;
+        color: #974e2d;
+      } /* 用 width:auto !important 覆盖SuperSlide自动生成的宽度，解决文字不衔接问题 */
+      .notice .bd ul li:nth-child(2) {
+        margin-top: 10px;
+      }
+      .notice .bd ul li img {
+        width: 250px;
+        height: 120px;
+      }
+      .notice .bd ul li h3 {
+        color: #333;
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .notice .bd ul li a {
+        color: #333;
+        text-decoration: none;
+
+      }
+      .notice .bd ul li a:hover {
+        color: #cf2820;
+      }
+      .notice .bd ul li a:visited {
+        color: #888888;
+      }
+      /* 通知公告样式 end */
+    </style>
+    <script src="../jquery.min.js"></script>
+    <script src="../jquery.SuperSlide.2.1.3.js"></script>
+  </head>
+  <body>
+    <!--通知公告开始-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4" >
+          <div class="notice mt30">
+            <a href="##">
+              <div class="tit clearfix"><span class="fr">+更多</span></div>
+            </a>
+            <div class="bd mt15">
+              <ul>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="&lt;P&gt;2019年中华全国台湾同胞联谊会&lt;/P&gt;&lt;P&gt;所监管企业工资总额信息披露&lt;/P&gt;"
+                    >•　2019年中华全国台湾同胞联谊会所监管企业工资总额信息披露</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="全国台联所属事业单位2020年度公开招聘应届高校毕业生公告"
+                    >• 全国台联所属事业单位2020年度公开招聘应届高校毕业生公告</a
+                  >
+                </li>
+                <li>
+                  <a 
+                    href="content.shtml"
+                    target="_blank"
+                    title="全国台联关于慰问坚守在抗疫一线的台籍医务工作者、湖北省台联系统工作者和定居台胞名单的公示"
+                    >•
+                    全国台联关于慰问坚守在抗疫一线的台籍医务工作者、湖北省台联系统工作者和定居台胞名单的公示</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="全国台联关于开展疫情防控捐助情况的公示"
+                    >• 全国台联关于开展疫情防控捐助情况的公示</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="全国台联防控疫情捐助告知书"
+                    >• 全国台联防控疫情捐助告知书</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="“我看祖国大陆这七十年”征文大赛"
+                    >• "我看祖国大陆这七十年"征文大赛</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="&lt;P&gt;2019年中华全国台湾同胞联谊会&lt;/P&gt;&lt;P&gt;所监管企业工资总额信息披露&lt;/P&gt;"
+                    >• 2019年中华全国台湾同胞联谊会所监管企业工资总额信息披露</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="全国台联所属事业单位2020年度公开招聘应届高校毕业生公告"
+                    >• 全国台联所属事业单位2020年度公开招聘应届高校毕业生公告</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="全国台联关于慰问坚守在抗疫一线的台籍医务工作者、湖北省台联系统工作者和定居台胞名单的公示"
+                    >•
+                    全国台联关于慰问坚守在抗疫一线的台籍医务工作者、湖北省台联系统工作者和定居台胞名单的公示</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="content.shtml"
+                    target="_blank"
+                    title="全国台联关于开展疫情防控捐助情况的公示"
+                    >• 全国台联关于开展疫情防控捐助情况的公示</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <script type="text/javascript">
+              jQuery('.notice').slide({
+                mainCell: '.bd ul',
+                autoPlay: true,
+                effect: 'topMarquee',
+                vis: 10,
+                interTime: 80,
+              });
+            </script>
+            <!--通知公告结束-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

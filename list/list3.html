@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>广告2</title>
+    <link rel="stylesheet" href="../common.css" />
+    <script src="../jquery.min.js"></script>
+    <script src="../jquery.SuperSlide.2.1.3.js"></script>
+    <style>
+      /*滚动新闻*/
+      .gundong {
+        width: 100%;
+        height: 57px;
+      }
+      .gundongl {
+        width: 148px;
+      }
+      .gundong .bd {
+        margin-left: 148px;
+        margin-right: 20px;
+        height: 57px;
+        background: url(gdxw2.png) repeat-x;
+        overflow: hidden;
+      }
+      /* .gundong .bd .tempWrap {
+        width: 1200px !important;
+      } */
+       /* 用 !important覆盖SuperSlide自动生成的宽度，这样就可以手动控制可视宽度。 */
+      .gundong .bd ul {
+        overflow: hidden;
+        zoom: 1;
+      }
+      .gundong .bd ul li {
+        margin-right: 20px;
+        float: left;
+        line-height: 57px;
+        text-align: left;
+        _display: inline;
+        width: auto !important;
+        font-size: 16px;
+        color: #999999;
+      } /* 用 width:auto !important 覆盖SuperSlide自动生成的宽度，解决文字不衔接问题 */
+      .gundong .bd ul li a:link {
+        color: #983434;
+      }
+      .gundong .bd ul li a:hover {
+        color: #cf2820;
+      }
+      .gundong .bd ul li a:visited {
+        color: #983434;
+      }
+      .gundongr {
+        width: 22px;
+      }
+      .section {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt30">
+          <!--滚动新闻开始-->
+          <div class="gundong clearfix">
+            <div class="gundongl fl"><img src="gdxw1.png" /></div>
+            <div class="gundongr fr"><img src="gdxw3.png" /></div>
+            <div class="bd">
+              <ul>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市委台办组织志愿者到"三无小区"开展爱国卫生环境大扫除</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市社会各界深切缅怀张自忠将军殉国80周年</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >宜城市张自忠教育促进会奖励优秀教师和学生</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市台企到扶贫村捐资助学</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市台企到扶贫村捐资助学</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市台企到扶贫村捐资助学</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市台企到扶贫村捐资助学</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市台企到扶贫村捐资助学</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市台企到扶贫村捐资助学</a
+                  ><span>[05-29]</span>
+                </li>
+                <li>
+                  <a href="content.shtml" target="_blank"
+                    >襄阳市台企到扶贫村捐资助学</a
+                  ><span>[05-29]</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <script type="text/javascript">
+            jQuery('.gundong').slide({
+              mainCell: '.bd ul',
+              autoPlay: true,
+              effect: 'leftMarquee',
+              vis: 5,
+              interTime: 50,
+            });
+          </script>
+          <!--滚动新闻结束-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

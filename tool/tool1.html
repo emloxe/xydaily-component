@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tool1</title>
+    <link rel="stylesheet" href="../common.css" />
+    <style>
+      .tool {
+        background-color: royalblue;
+      }
+      .tool .fr {
+        color: #ddd;
+      }
+      .tool a {
+        display: inline-block;
+        height: 26px;
+        padding: 4px 10px;
+        line-height: 26px;
+        color: #fff;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tool">
+      <div class="container">
+        <div class="row">
+          <div class="fr">
+              <a href="javascript:SetHome(window.location)">设为首页</a>|
+              <a href="javascript:AddFavorite(window.location,document.title)"
+                >加入收藏</a
+              >| <a id="assist-open" href="javascript:void(0)">无障碍</a>|
+              <a href="javascript:StranBody()" id="StranLink">繁体</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>测试测试繁体简体切换</div>
+    <!-- tool.js 必须放在最后 -->
+    <script src="./tool.js"></script>
+    <script src="./assist-entry.js"></script>
+  </body>
+</html>

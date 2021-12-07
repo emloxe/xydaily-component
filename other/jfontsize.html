@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .jfontsize {
+        float: right;
+        height: 32px;
+        margin: -1px 0;
+        padding: 0 20px;
+      }
+      .jfontsize a {
+        float: left;
+        box-sizing: content-box;
+        display: block;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+        padding: 3px;
+        background-color: #fff;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+      }
+      .jfontsize a i {
+        display: block;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        background-image: url(jfont.png);
+        background-repeat: no-repeat;
+      }
+      #jfontsize-p2 i {
+        background-position: 0 0;
+      }
+      #jfontsize-m2 i {
+        background-position: -24px 0;
+      }
+      #jfontsize-d2 i {
+        background-position: -48px 0;
+      }
+      a#jfontsize-p2:hover i {
+        background-position: 0 -24px;
+      }
+      a#jfontsize-m2:hover i {
+        background-position: -24px -24px;
+      }
+      a#jfontsize-d2:hover i {
+        background-position: -48px -24px;
+      }
+      .article-box p {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jfontsize">
+      <a id="jfontsize-p2" title="切换大字体" style="cursor: pointer">
+        <i></i>
+      </a>
+      <a id="jfontsize-m2" title="切换小字体" style="cursor: pointer">
+        <i></i>
+      </a>
+      <a id="jfontsize-d2" title="默认字体大小" style="cursor: pointer">
+        <i></i>
+      </a>
+    </div>
+
+    <div class="article-box" id="article-box">
+      <p>测试加大减小字体</p></div>
+    <script src="../jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://mzj.wuhan.gov.cn/material/js/jquery_jfontsize.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mzj.wuhan.gov.cn/material/js/jstorage.js"
+    ></script>
+    <script>
+      //字体控制
+      $('.article-box *,.article-box table').jfontsize({
+        btnMinusClasseId: '#jfontsize-m2',
+        btnDefaultClasseId: '#jfontsize-d2',
+        btnPlusClasseId: '#jfontsize-p2',
+        btnMinusMaxHits: 1,
+        btnPlusMaxHits: 5,
+        sizeChange: 2,
+      });
+    </script>
+  </body>
+</html>

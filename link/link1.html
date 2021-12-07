@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>link1</title>
+    <link rel="stylesheet" href="../common.css" />
+    <style>
+      .links > ul > li {
+        position: relative;
+        margin-bottom: 20px;
+        line-height: 40px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .links .link-item {
+        position: relative;
+      }
+
+      .links .link-item > a {
+        display: block;
+        border: 1px solid #ddd;
+        background: #fff url(./links_arr.png) 96% 50% no-repeat;
+      }
+
+      .links li ul {
+        display: none\9;
+        z-index: -1;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 40px;
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        opacity: 0;
+        transform: translate(0, 3px);
+        transition: opacity, transform 0.3s;
+      }
+
+      .links li:hover ul {
+        display: block\9;
+        z-index: 9;
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+
+      .links li li {
+        border-top: 1px solid #ddd;
+        line-height: 39px;
+        text-align: center;
+        transition: all 0.3s;
+      }
+
+      .links li li:hover {
+        background-color: #f8f8f8;
+      }
+
+      .links li li a {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: keep-all;
+        text-overflow: ellipsis;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="margin-top: 300px">
+      <div class="links">
+        <ul class="row rowyw">
+          <li class="col-sm-3 pr20">
+            <div class="link-item">
+              <a href="javascript:" title="">国家部委网站</a>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.fmprc.gov.cn/"
+                    target="_blank"
+                    title="外交部"
+                    >外交部</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fmprc.gov.cn/"
+                    target="_blank"
+                    title="外交部"
+                    >外交部</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fmprc.gov.cn/"
+                    target="_blank"
+                    title="外交部"
+                    >外交部</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fmprc.gov.cn/"
+                    target="_blank"
+                    title="外交部"
+                    >外交部</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="col-sm-3 pl10 pr10">
+            <div class="link-item">
+              <a href="javascript:" title="">省直部门网站</a>
+              <ul>
+                <li>
+                  <a
+                    href="http://glj.nanjing.gov.cn/"
+                    target="_blank"
+                    title="南京市级机关事务管理局"
+                    >南京市级机关事务管理局</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="col-sm-3 pl10 pr10">
+            <div class="link-item">
+              <a href="javascript:" title="">省直部门网站</a>
+              <ul>
+                <li>
+                  <a
+                    href="http://glj.nanjing.gov.cn/"
+                    target="_blank"
+                    title="南京市级机关事务管理局"
+                    >南京市级机关事务管理局</a
+                  >
+                </li>
+              </ul>
+            </div>
+          <li class="col-sm-3 pl20">
+            <div class="link-item">
+              <a href="javascript:" title="">市县机关事务网站</a>
+              <ul>
+                <li>
+                  <a
+                    href="http://www.jgswfwzx.com/"
+                    target="_blank"
+                    title="恩施州机关事务服务中心"
+                    >恩施州机关事务服务中心</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

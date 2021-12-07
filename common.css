@@ -1,4 +1,7 @@
-html, body, ul, li {
+html,
+body,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -11,9 +14,9 @@ li {
 }
 
 a {
+  color: #333;
   text-decoration: none;
 }
-
 
 .fl {
   float: left;
@@ -164,7 +167,7 @@ a {
   }
 
   .col-md-1,
-  .col-md-2,  
+  .col-md-2,
   .col-md-3,
   .col-md-4,
   .col-md-5,
@@ -282,24 +285,42 @@ a {
   margin-top: 15px;
 }
 
-.pl15{
+.pl10 {
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.pl15 {
   box-sizing: border-box;
   padding-left: 15px;
 }
 
-.pr15{
+.pl20 {
   box-sizing: border-box;
-  padding-right: 15px;
+  padding-left: 20px;
 }
 
-.pl30{
+.pl30 {
   box-sizing: border-box;
   padding-left: 30px;
 }
 
-.pr30{
+.pr10 {
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.pr15 {
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.pr20 {
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.pr30 {
   box-sizing: border-box;
   padding-right: 30px;
 }
-
-

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list4</title>
+    <link rel="stylesheet" href="../common.css" />
+    <script src="../jquery.min.js"></script>
+    <script src="../jquery.SuperSlide.2.1.3.js"></script>
+    <style>
+      /*滚动新闻*/
+      .tzgg { font-size: 14px; height: 26px; margin: 4px 10px 1px 0; padding: 0 10px; line-height: 26px; background-color: #e6f2ff; color: #0060c1;}
+      .txtScroll-top{ width:340px; margin-right: 20px;  overflow:hidden; position:relative;  }
+      .txtScroll-top .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+      .txtScroll-top .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; }
+      .txtScroll-top .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("images/icoCircle.gif") 0 -9px no-repeat; }
+      .txtScroll-top .hd ul li.on{ background-position:0 0; }
+      .txtScroll-top .bd{ padding:5px;  }
+      .txtScroll-top .infoList li{ height:24px; line-height:24px; font-size: 14px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;  }
+      .txtScroll-top .infoList li .date{ float:right; color:#b5b5b5; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt30">
+          <!--滚动新闻开始-->
+        <div class="tzgg fl left">通知公告</div>
+
+        <div class="txtScroll-top">
+            <div class="bd">
+                <ul class="infoList">
+                    <li><span class="date">[2022-03-15]</span><a href="#" target="_blank">押金迟迟不退 仲裁助力维权 押金迟迟不退 仲裁助力维权 押金迟迟不退 仲裁助力维权</a></li>
+                    <li><span class="date">[2022-03-15]</span><a href="#" target="_blank">押金迟迟不退 仲裁助力维权</a></li>
+                    <li><span class="date">[2022-03-15]</span><a href="#" target="_blank">押金迟迟不退 仲裁助力维权</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            jQuery(".txtScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:1});
+        </script>
+          <!--滚动新闻结束-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

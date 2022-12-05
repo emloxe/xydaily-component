@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>手风琴</title>
+
+    <style>
+      /*视频 手风琴*/
+      .wrapper_1200{width: 1200px;}
+      .wrap{width:100%;height:270px;position:relative;overflow:hidden; margin-bottom: 27px;}
+      .pic{width:480px;height:100%;position:absolute;top:0;background: #e6e6e6 ;}
+      .pic img{width: 100%; height: 100%; display: block;}
+      .pic .pic_num{background:url(./wrap_pic_numBg.png) no-repeat center center;position: absolute;top: 0;left: 0;height: 100%; width: 100%; }
+      .pic .pic_num .pic_numBg{display: table; width: 18px;padding: 0 36px;height: 100%;line-height: 100%; font-size: 18px; color: #ffffff; font-weight: bold;position: absolute;top: 0;left: 0;}
+      .pic .pic_num span{display: table-cell;vertical-align: middle;width: 18px; line-height: 22px; word-wrap: break-word; word-break: break-all; text-align: center;}
+      .pic .pic_con{ display:none;position: absolute;top: 0;left: 0;height: 100%; width: 100%; background: url(./wrap_pic_con.png) repeat; background-size: cover;}
+      .pic .pic_con .txt{ display: block; width: 100%; height: 100%;}
+      .pic .pic_con .txt .title{ display: none; font-size:18px; color: #fff; font-weight: bold; line-height:48px; padding: 0 20px; padding-top: 145px;}
+      .pic .pic_con .txt .brief{display: none; font-size: 16px; color: #ffffff; line-height: 26px; padding: 0 20px;}
+      .pic .pic_con a{color: #ffffff;text-decoration:none;}
+      .pic .pic_con .icon{position: absolute; top:15px; left:15px; width:65px; height: 24px; background: url(./wrapTextBg.png) no-repeat; text-align: center; line-height: 24px; font-size: 14px; color: #fff;}
+      .pic.cur .pic_num{ display: none;}
+      .pic.cur .pic_con{ display: block;}
+      .pic.cur .pic_con .title{display: block;}
+      .pic.cur .pic_con .brief{display: block;}
+    </style>
+    <script src="../jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper_1200" id="SUBD1605066532559882" data-spm="S59882">
+      <div class="ELMTGbIfNnKKMwynwO958UHG201111 wrap" data-spm="EGbIfNnKKMwy">
+        <div class="pic cur">
+          <img
+            src="https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2022/1/30/1643526409050_36.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>云学习</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">直播专题</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/yunxuexi/index.shtml"
+              target="_blank"
+              ><span class="title">云学习</span
+              ><span class="brief"
+                >跟随总书记足迹，云走考察之路，踔厉奋发，一起向未来！</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="pic" style="left: 444px; z-index: 2">
+          <img
+            src="https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/11/25/1669346411476_980.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>下一站乡村</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">直播专题</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/zhuanti/2022/xyzxc/index.shtml"
+              target="_blank"
+              ><span class="title">下一站乡村</span
+              ><span class="brief"
+                >直播中国邀您走进乡村，这里有古朴的村庄、充满乡愁的乡间小路、原生态的山水田园……静享人与自然的极致之美。</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="pic" style="left: 526px; z-index: 3">
+          <img
+            src="https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2022/11/22/1669082434785_350.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>清寒小雪 冬韵渐浓</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">直播专题</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/zhuanti/2022/xiaoxue/index.shtml"
+              target="_blank"
+              ><span class="title">清寒小雪 冬韵渐浓</span
+              ><span class="brief"
+                >小雪节气，很多地方已是银装素裹，在白雪的覆盖下仿若童话世界，直播中国邀您赴一场冬日之约，邂逅唯美雪景。</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="pic" style="left: 608px; z-index: 4">
+          <img
+            src="https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/11/18/1668741980777_300.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>相约魅力安徽</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">直播专题</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/zhuanti/2022/anhui/index.shtml"
+              target="_blank"
+              ><span class="title">寻梦秀美山水 相约魅力安徽</span
+              ><span class="brief"
+                >美好安徽，迎客天下。跟随镜头，让我们一起慢赏黄山，行走大湾村，打卡南湖湿地公园……感受多彩山水的魅力安徽。</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="pic" style="left: 690px; z-index: 5">
+          <img
+            src="https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2022/11/14/1668394512703_343.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>沿着珠江水系赏美景</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">直播专题</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/zhuanti/2022/zjsx/index.shtml"
+              target="_blank"
+              ><span class="title">沿着珠江水系 体验多样风情</span
+              ><span class="brief"
+                >珠江水系延绵流淌，直播中国邀您一起沿着珠江水系，看江畔美景多姿多彩，体验多样风情。</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="pic" style="left: 772px; z-index: 6">
+          <img
+            src="https://p1.img.cctvpic.com/photoAlbum/page/performance/img/2022/9/30/1664531253622_704.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>慢赏古北水镇风光</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">正在直播</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/zbdcy/index.shtml?pageID=PAGE32bIvkXFtieJPShG3Uv2210302&amp;interactionId=INTEKYfQMTpX9DwIm1wgfAtP210302"
+              target="_blank"
+              ><span class="title">慢赏古北水镇风光</span
+              ><span class="brief"
+                >古北水镇位于北京市密云区古北口镇，坐落在司马台长城脚下。步入其中选一处高点，可一览水镇全貌，慢赏独特风光。</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="pic" style="left: 854px; z-index: 7">
+          <img
+            src="https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/10/10/1665392478112_872.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>云行三公山</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">正在直播</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/zbdcy/index.shtml?pageID=PAGEsaAZmy8COI3CeOt1XFz7220114&amp;interactionId=INTEcmJF9I3PbFzCFJxoB9e0220826"
+              target="_blank"
+              ><span class="title">云行三公山旅游风景区</span
+              ><span class="brief"
+                >安徽芜湖三公山风景区地处三公山核心区，这里自然风光旖旎，四时之景赏玩无尽，是个值得一去的旅行目的地。</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="pic" style="left: 936px; z-index: 8">
+          <img
+            src="https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/10/10/1665392383153_578.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>巫山长江画卷</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">正在直播</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/zbdcy/index.shtml?pageID=PAGEOYUfiLLWl1FCohukxiFt220830&amp;interactionId=INTEQz49h0SB6x9qRnzck1VP220830"
+              target="_blank"
+              ><span class="title">巫山长江画卷</span
+              ><span class="brief"
+                >长江画卷人文景区位于重庆市巫山云雨康养旅游度假区，站在此处可俯瞰山川秀美、风景秀丽的长江巫峡。</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="pic" style="left: 1018px; z-index: 9">
+          <img
+            src="https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/10/10/1665392365352_998.jpg"
+          />
+          <div class="pic_num">
+            <div class="pic_numBg"><span>独具特色的真武阁</span></div>
+          </div>
+          <div class="pic_con">
+            <span class="icon">正在直播</span>
+            <a
+              class="txt"
+              href="https://livechina.cctv.com/zbdcy/index.shtml?pageID=PAGEGjcGMRMdWutrNlW7eoQz220729&amp;interactionId=INTES74z7FvmLt5iTXhcsCq8220830"
+              target="_blank"
+              ><span class="title">走进玉林真武阁</span
+              ><span class="brief"
+                >真武阁建于明万历年间，距今已440多年，全阁全部用格木构件榫卯，二楼四根内柱不着地，世所罕见。</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* 手风琴 */
+      var windowW = window.innerWidth;
+      if (windowW <= 1417) {
+        windowWidth = true;
+      } else {
+        windowWidth = false;
+      }
+      var imgOuter = $('.wrap');
+      var imgDiv = $('.pic');
+      var imgNow = 0;
+      var imgMouse = 0;
+      var imgOuterWidth = imgOuter.width();
+      if (windowWidth) {
+        var imgWidth = 444;
+        var edgeDistance = 82;
+      } else {
+        var imgWidth = 480;
+        var edgeDistance = 90;
+      }
+      imgDiv.each(function (index) {
+        if (index != 0) {
+          imgDiv.eq(index).css({
+            left: (index - 1) * edgeDistance + imgWidth,
+            'z-index': index + 1,
+          });
+        }
+      });
+
+      function wrapStar() {
+        imgNow = 0;
+        imgOuterWidth = imgOuter.width();
+        if (windowWidth) {
+          imgWidth = 444;
+          edgeDistance = 82;
+        } else {
+          imgWidth = 480;
+          edgeDistance = 90;
+        }
+        imgDiv.eq(0).css({
+          left: 0,
+          'z-index': 1,
+        });
+        imgDiv.eq(0).addClass('cur').siblings().removeClass('cur');
+        imgDiv.eq(0).find('.txt .title').show();
+        imgDiv.eq(0).find('.txt .brief').show();
+        imgDiv.each(function (index) {
+          if (index != 0) {
+            imgDiv.eq(index).css({
+              left: (index - 1) * edgeDistance + imgWidth,
+              'z-index': index + 1,
+            });
+          }
+        });
+      }
+
+      function mouseSlide() {
+        imgDiv.find('.txt .title').hide();
+        imgDiv.find('.txt .brief').hide();
+        if (imgMouse > imgNow) {
+          for (var i = imgNow + 1; i <= imgMouse; i++) {
+            imgDiv.eq(imgMouse).addClass('cur').siblings().removeClass('cur');
+            imgDiv.eq(imgMouse).find('.txt .title').fadeIn(400);
+            imgDiv.eq(imgMouse).find('.txt .brief').fadeIn(500);
+            imgDiv
+              .eq(i)
+              .stop()
+              .animate(
+                {
+                  left: edgeDistance * i + 'px',
+                },
+                200
+              );
+          }
+          imgNow = imgMouse;
+        } else {
+          for (var i = imgNow; i > imgMouse; i--) {
+            imgDiv.eq(imgMouse).addClass('cur').siblings().removeClass('cur');
+            imgDiv.eq(imgMouse).find('.txt .title').fadeIn(400);
+            imgDiv.eq(imgMouse).find('.txt .brief').fadeIn(500);
+            imgDiv
+              .eq(i)
+              .stop()
+              .animate(
+                {
+                  left:
+                    imgOuterWidth - (imgDiv.size() - i) * edgeDistance + 'px',
+                },
+                200
+              );
+          }
+          imgNow = imgMouse;
+        }
+      }
+      imgDiv.hover(function () {
+        imgMouse = $(this).index();
+        if (imgMouse != imgNow) {
+          mouseSlide();
+        }
+      });
+    </script>
+  </body>
+</html>

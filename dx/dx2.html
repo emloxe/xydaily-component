@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover 效果</title>
+
+    <style>
+    /*特别推荐*/
+    .activityTab{position: relative;}
+    .activityTab .con{position:relative;width:1200px;height:335px;overflow:hidden;}
+    .activityTab .con ul{ width:9999px;height: 100%; position: relative;}
+    .activityTab .con ul li{ float: left; width: 224px; height: 100%; position: relative; margin-right: 20px; background: #e6e6e6 ;}
+    .activityTab .con ul li .img{display: block;width: 224px; height:335px;}
+    .activityTab .con ul li .img img{width: 100%; height:100%;}
+    .activityTab .con ul li .txt{position:absolute; height:100%; top:100%; left: 0; background: url(./activityTab_textbg.png) repeat-x;padding: 0 20px;}
+    .activityTab .con ul li .txt .title{color:#ffffff; font-size: 20px; line-height:44px;padding-top: 97px; font-weight: bold; display: inline-block;}
+    .activityTab .con ul li .txt .brief{color:#ffffff;font-size:14px; line-height: 26px;display: inline-block;}
+    .activityTab .con ul li a.txt:hover{color:#ffffff;}
+
+    </style>
+    <script src="../jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="activityTab"
+    >
+      <div class="con">
+        <ul style="left: 0%; width: 101.601%">
+          <li>
+            <div class="img">
+              <img
+                src="https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2022/3/28/1648455564823_783.jpg"
+              />
+            </div>
+            <a
+              class="txt"
+              href="https://v.cctv.com/xysp/index.shtml"
+              target="_blank"
+              style="top: 100%"
+            >
+              <span class="title">小央视频</span>
+              <span class="brief"
+                >央视网原创视频子品牌，以更加贴近年轻人的视角，有趣、有料、有故事的方式解读时代。</span
+              >
+            </a>
+          </li>
+          <li>
+            <div class="img">
+              <img
+                src="https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2022/10/14/1665755226952_829.jpg"
+              />
+            </div>
+            <a
+              class="txt"
+              href="https://edu.cctv.com/special/qmjkjcrs/page/index.shtml"
+              target="_blank"
+              style="top: 100%"
+            >
+              <span class="title">全民健康</span>
+              <span class="brief"
+                >落实健康中国战略，央视网倾力打造大健康类节目IP《全民健康》，向所有人分享健康知识。</span
+              >
+            </a>
+          </li>
+          <li>
+            <div class="img">
+              <img
+                src="https://p5.img.cctvpic.com/photoAlbum/page/performance/img/2022/10/19/1666174489933_123.jpg"
+              />
+            </div>
+            <a
+              class="txt"
+              href="https://v.cctv.com/zixun/yswxc/index.shtml?spm=C90324.Pfdd0SYeqktv.Eri5TUDwaTXO.5"
+              target="_blank"
+              style="top: 100%"
+            >
+              <span class="title">数字主播央视网小C</span>
+              <span class="brief"
+                >小C是总台央视网的一位数字主播，同时也是一位对世界充满好奇、开朗明媚、热爱国风的元气少女。</span
+              >
+            </a>
+          </li>
+          <li>
+            <div class="img">
+              <img
+                src="https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/3/28/1648455550671_298.jpg"
+              />
+            </div>
+            <a
+              class="txt"
+              href="https://v.cctv.com/reping/bh/index.shtml"
+              target="_blank"
+              style="top: 100%"
+            >
+              <span class="title">《比划》</span>
+              <span class="brief"
+                >原创短视频栏目，专注于解释热点，分享知识，阐述流行，让知识流动起来，回应年轻人的好奇心。</span
+              >
+            </a>
+          </li>
+          <li>
+            <div class="img">
+              <img
+                src="https://p1.img.cctvpic.com/fmspic/pd/314469chaojigongchang20220317.jpg"
+              />
+            </div>
+            <a
+              class="txt"
+              href="https://galaxy.bjcathay.com/c?z=cathay&amp;la=0&amp;si=3&amp;cg=84&amp;c=1695&amp;ci=67&amp;or=690&amp;l=10373&amp;bg=10377&amp;b=17147&amp;u=https://business.cctv.com/special/cjgc/index.html"
+              target="_blank"
+              style="top: 100%"
+            >
+              <span class="title">超级工厂</span>
+              <span class="brief"
+                >深入挖掘中国品牌商业价值、探寻品牌数字化升级道路、为国货品牌装上快速成长的引擎。</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-arrow" style="display: none">
+        <span class="tab-prev end"></span>
+        <span class="tab-next"></span>
+      </div>
+    </div>
+
+
+
+    <script>
+      /*特别推荐*/
+      $(".activityTab .con ul li").on('mouseenter', function (e) {
+        $(this).find(".txt").stop(true).animate({"top":"0"},500);
+      }).on('mouseleave', function (e) {
+        $(this).find(".txt").stop(true).animate({"top":"100%"},300);
+      });
+    </script>
+  </body>
+</html>
